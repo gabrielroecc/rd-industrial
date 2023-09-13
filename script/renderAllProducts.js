@@ -14,7 +14,7 @@ allProducts.map(({ name, icon, img, description, cta, slug }) => {
 		${description}
 		</p>
 		<div class="card_btn">
-			<a href="/product.html?slug=${slug}">${cta ? cta : "Carregando"}</a>
+			<a href="${slug}.html">${cta ? cta : "Carregando"}</a>
 		</div>
 	</div>
 </div>`;
