@@ -11,6 +11,9 @@
 	</head>
 	<body>
 		<header>
+			<div class="open_menu">
+				<img src="./img/open-menu-icon.svg" alt="" />
+			</div>
 			<div class="container">
 				<img src="./img/logo.png" alt="" />
 				<div class="email_and_nav">
@@ -24,10 +27,15 @@
 							<p>(64) 3431-5578</p>
 						</div>
 					</div>
-					<nav>
+					<nav class="desk_nav">
 						<ul>
 							<li>
-								<a href="#">HOME</a>
+								<div class="close_menu">
+									<img src="./img/close.svg" alt="" />
+								</div>
+							</li>
+							<li>
+								<a href="index.html">HOME</a>
 							</li>
 
 							<li>
@@ -49,7 +57,7 @@
 							</li>
 
 							<li>
-								<a href="">CONTATO</a>
+								<a href="contact.html">CONTATO</a>
 							</li>
 						</ul>
 					</nav>
@@ -59,7 +67,12 @@
 
 		<section class="section_1_slider_wrapper">
 			<div class="slider">
-				<div class="slider_item">
+				<div class="slider_item slider_item_1">
+					<video autoplay muted loop>
+						<source
+							src="https://oferteidigital.com.br/videos/C0271.mp4"
+							type="video/mp4" />
+					</video>
 					<div class="container">
 						<h1>Mais de 15 anos de experiência e know-how</h1>
 						<p>
@@ -323,7 +336,7 @@
 							</li>
 
 							<li>
-								<a href="">CONTATO</a>
+								<a href="contact.html">CONTATO</a>
 							</li>
 						</ul>
 					</nav>
@@ -396,5 +409,6 @@
 		<script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
 		<script src="./script/homeProducts.js"></script>
 		<script src="./script/index.js"></script>
+		<script src="./script/menu.js"></script>
 	</body>
 </html>
