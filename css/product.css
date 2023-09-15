@@ -32,7 +32,7 @@ body {
 	line-height: normal;
 }
 .text_wrapper {
-	padding: 214px 0 214px 64px !important;
+	padding: 83px 0 83px 64px !important;
 	width: 100% !important;
 	max-width: 768px !important;
 }
@@ -105,7 +105,7 @@ footer .tel p {
 	color: #fff !important;
 }
 
-body > header > div > div > nav > ul > li:nth-child(1) > a::before {
+body > header > div > div > nav > ul > li:nth-child(2) > a::before {
 	width: 45px;
 	height: 10px;
 	background-color: #3071a0;
@@ -114,10 +114,10 @@ body > header > div > div > nav > ul > li:nth-child(1) > a::before {
 	position: absolute;
 	top: -22px;
 }
-body > header > div > div > nav > ul > li:nth-child(3) > a {
+body > header > div > div > nav > ul > li:nth-child(4) > a {
 	position: relative;
 }
-body > header > div > div > nav > ul > li:nth-child(3) > a::before {
+body > header > div > div > nav > ul > li:nth-child(4) > a::before {
 	width: 80px;
 	height: 10px;
 	background-color: #3071a0;
@@ -183,4 +183,93 @@ body > header > div > div > nav > ul > li:nth-child(3) > a::before {
 		max-width: 100% !important;
 		height: initial !important;
 	}
+}
+.section_4 img {
+	position: absolute;
+	right: 0;
+	object-fit: cover;
+	transform: initial !important;
+}
+.galery {
+	padding: 124px 0 170px 0;
+}
+.galery .container {
+	overflow-x: scroll;
+	overflow-y: visible;
+}
+.galery_img_wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	gap: 44px;
+	width: 1450px;
+	padding: 0 0 21px 0;
+}
+
+.galery_img_wrapper img {
+	width: 250px;
+	height: 250px;
+	background-color: red;
+	object-fit: cover;
+	cursor: pointer;
+	transition: 0.4s;
+}
+.galery_img_wrapper img:hover {
+	transform: translateY(-10px);
+}
+.modal {
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.9);
+	position: fixed;
+	top: 0;
+	z-index: 90;
+	backdrop-filter: blur(10px);
+	transition: 0.4s;
+	opacity: 0;
+	pointer-events: none;
+}
+.modal .modal_img {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 100vw;
+	max-width: 1000px;
+	max-height: 1000px;
+	object-fit: cover;
+}
+.close_img {
+	padding: 20px;
+	pointer-events: all;
+	cursor: pointer;
+	position: absolute;
+	top: 100px !important;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 100;
+	width: 38px !important;
+	height: 38px !important;
+	z-index: 100;
+}
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+	scrollbar-width: auto;
+	scrollbar-color: #5f96dd #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+	background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: #5f96dd;
+	border-radius: 10px;
+	border: 3px solid #ffffff;
 }

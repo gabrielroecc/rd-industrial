@@ -59,7 +59,7 @@
 	margin-bottom: 52px;
 	margin-top: 0 !important;
 }
-body > header > div > div > nav > ul > li:nth-child(1) > a::before {
+body > header > div > div > nav > ul > li:nth-child(2) > a::before {
 	width: 45px;
 	height: 10px;
 	background-color: #3071a0;
@@ -68,10 +68,10 @@ body > header > div > div > nav > ul > li:nth-child(1) > a::before {
 	position: absolute;
 	top: -22px;
 }
-body > header > div > div > nav > ul > li:nth-child(2) > a {
+body > header > div > div > nav > ul > li:nth-child(3) > a {
 	position: relative;
 }
-body > header > div > div > nav > ul > li:nth-child(2) > a::before {
+body > header > div > div > nav > ul > li:nth-child(3) > a::before {
 	width: 80px;
 	height: 10px;
 	background-color: #3071a0;

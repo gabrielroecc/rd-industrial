@@ -32,6 +32,12 @@ a {
 .glider-track {
 	height: 100%;
 }
+.open_menu {
+	display: none;
+}
+body > header > div.container > div > nav > ul > li:nth-child(1) {
+	display: none;
+}
 .slider_item {
 	height: 100%;
 	background-image: url("../img/b1.png");
@@ -39,8 +45,21 @@ a {
 	background-position: center;
 	display: flex;
 	align-items: center;
-	padding: 0 2%;
 	justify-content: start;
+}
+.slider_item_1 {
+	background-image: initial !important;
+	background-color: #000;
+}
+video {
+	width: 100%;
+	object-fit: cover;
+	height: 768px;
+	opacity: 0.5;
+	position: relative;
+}
+.slider_item_1 .container {
+	position: absolute;
 }
 .slider_item h1 {
 	color: #fff;
@@ -131,6 +150,7 @@ header .container {
 }
 .email_and_nav {
 	width: 100vw;
+	transition: 0.4s;
 }
 .email_and_nav nav {
 	border-top: 1px solid #fff;
@@ -210,6 +230,7 @@ nav ul li a {
 	position: relative;
 }
 .bgScroll {
+	display: none !important;
 	width: 350px;
 	height: 200px;
 	background-color: #3071a0;
@@ -239,6 +260,12 @@ nav ul li a {
 	line-height: normal;
 	margin-top: 7px;
 }
+.section_3 {
+	padding: 20px 0;
+}
+.section_3 .container {
+	padding: 0;
+}
 .section_3 .container h1 {
 	color: #1d1d1d;
 	font-family: Montserrat;
@@ -262,13 +289,13 @@ nav ul li a {
 }
 .section_4 .text_wrapper {
 	background-image: url("../img/section-4-bg.png");
-	padding: 86px 157px 32px 64px;
+	padding: 32px 157px 32px 64px;
 	width: fit-content;
 }
 .section_4_first_title {
 	color: #1d1d1d;
 	font-family: Montserrat;
-	font-size: 12px;
+	font-size: 20px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
@@ -281,7 +308,7 @@ nav ul li a {
 	font-weight: 700;
 	line-height: normal;
 	max-width: 47%;
-	margin-top: 8px;
+	margin-top: 20px;
 }
 .section_4 .section_4_text {
 	color: #1d1d1d;
@@ -305,14 +332,17 @@ nav ul li a {
 	font-weight: 700;
 	line-height: normal;
 	width: fit-content;
+
+	display: block;
 }
 .section_4 img {
 	position: absolute;
 	right: 0;
-	bottom: 0;
+	bottom: 50%;
 	width: 604px;
 	height: 441px;
 	object-fit: cover;
+	transform: translateY(50%);
 }
 .section_5 {
 	padding: 223px 0 100px 0;
@@ -367,6 +397,9 @@ nav ul li a {
 	gap: 10px;
 	padding-left: 20px;
 }
+.card_title img {
+	width: 38px;
+}
 .card_title p {
 	color: #1d1d1d;
 	font-family: Montserrat;
@@ -406,6 +439,11 @@ nav ul li a {
 	text-decoration: none;
 }
 .card_img {
+	width: 362px;
+	height: 220px;
+	object-fit: cover;
+}
+.card_img img {
 	width: 362px;
 	height: 220px;
 	object-fit: cover;
@@ -492,11 +530,10 @@ nav ul li a {
 .section_7 .bar {
 	margin: 10px auto 0;
 }
-.section_7 .brand img {
+.section_7 img {
 	width: 109px;
 	height: 78px;
 	object-fit: cover;
-	box-shadow: 0px 0px 32px 1px rgba(0, 0, 0, 0.1);
 }
 .brands_wrapper {
 	display: flex;
@@ -568,10 +605,10 @@ footer .direitos {
 	font-weight: 400;
 	line-height: normal;
 }
-body > header > div > div > nav > ul > li:nth-child(1) > a {
+body > header > div > div > nav > ul > li:nth-child(2) > a {
 	position: relative;
 }
-body > header > div > div > nav > ul > li:nth-child(1) > a::before {
+body > header > div > div > nav > ul > li:nth-child(2) > a::before {
 	width: 45px;
 	height: 10px;
 	background-color: #3071a0;
@@ -605,6 +642,9 @@ body > header > div > div > nav > ul > li:nth-child(1) > a::before {
 }
 
 @media (max-width: 1025px) {
+	.subnav {
+		display: none !important;
+	}
 	.bgScroll {
 		display: none;
 	}
@@ -658,6 +698,41 @@ body > header > div > div > nav > ul > li:nth-child(1) > a::before {
 	.direitos {
 		margin: 0 !important;
 	}
+	.email_tel {
+		display: none;
+	}
+	.email_and_nav nav {
+		border: none;
+		background-color: #fff;
+		padding: 50px;
+	}
+	body > header > div > div > nav > ul > li:nth-child(1) > a::before {
+		display: none;
+	}
+	.email_and_nav {
+		position: absolute;
+		top: -900px;
+		right: 0;
+		width: 100%;
+	}
+	nav ul {
+		flex-direction: column;
+	}
+	nav ul li a {
+		color: #1d1d1d;
+	}
+	header {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row-reverse;
+	}
+	.open_menu {
+		display: block;
+	}
+	body > header > div.container > div > nav > ul > li:nth-child(1) {
+		display: block;
+	}
 }
 .subnav {
 	position: absolute;
@@ -697,7 +772,81 @@ body > header > div > div > nav > ul > li:nth-child(1) > a::before {
 .subnav li a:hover {
 	border-bottom: 1px solid #1d1d1d;
 }
-body > header > div > div > nav > ul > li:nth-child(2):hover .subnav {
+body > header > div > div > nav > ul > li:nth-child(3):hover .subnav {
 	opacity: 1;
 	pointer-events: all;
+}
+@media (max-width: 1190px) {
+	.slider_item_1 .container {
+		left: 1.01%;
+	}
+}
+.email_and_nav.active {
+	top: 0 !important;
+}
+@keyframes slide {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-100%);
+	}
+}
+
+.logos {
+	overflow: hidden;
+	padding: 60px 0;
+	background: white;
+	white-space: nowrap;
+	position: relative;
+}
+
+.logos:before,
+.logos:after {
+	position: absolute;
+	top: 0;
+	width: 250px;
+	height: 100%;
+	content: "";
+	z-index: 2;
+}
+
+.logos:before {
+	left: 0;
+	background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos:after {
+	right: 0;
+	background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos:hover .logos-slide {
+	animation-play-state: paused;
+}
+
+.logos-slide {
+	display: inline-block;
+	animation: 35s slide infinite linear;
+}
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+	scrollbar-width: auto;
+	scrollbar-color: #5f96dd #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+	background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: #5f96dd;
+	border-radius: 10px;
+	border: 3px solid #ffffff;
 }
